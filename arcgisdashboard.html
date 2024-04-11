@@ -113,7 +113,7 @@
     <li>Step 3. Under "New App" in my Content, I selected "Dashboards" and began working with the different configurations available.</li>
     <img src="images/dashboardsettings.png" alt="Portland Dashboard Settings" style="max-width: 100%; height: auto;">
     </li>
-    <li>Step 4. In "Mobile" view, I selected "Body" to browse through and add an Esri Living Atlas layer: NOAA USA Wind Speeds. That didn't work (more about why below), so I went in and changed it to NOAA USA Storm Reports. I then configured it to group the types of storms so you can filter by "Snow" for example, and it will show you where in the past week it has snowed. Users can select that filter by clicking the filter button and the bottom of the screen.</li>
+    <li>Step 4. In "Mobile" view, I selected "Body" to browse through and add an Esri Living Atlas layer: NOAA USA Wind Speeds. That didn't work (more about why below), so I went in and changed it to NOAA USA Storm Reports which still didn't end up working, but I then configured it to group the types of storms so you can filter by "Snow" for example, and it will show you where in the past week it has snowed. Users can select that filter by clicking the filter button and the bottom of the screen.</li>
     <img src="images/dashboardstorm.png" alt="Portland Dashboards" style="max-width: 100%; height: auto;">
     <li>Step 4. In "Mobile" view, I selected "Drawer" to browse through and add one the matching live update data for NOAA USA Storm Reports. The window at the bottom will now show the most recent storm reports.</li>
     <img src="images/dashboarddrawer.png" alt="Portland Dashboards" style="max-width: 100%; height: auto;">
@@ -143,11 +143,12 @@
 
     <h2 class="w3-center  " style="font-size: 36px; font-family: Arial;">What didn't work:</h2>
   <ul style="font-size: 20px; font-family: Arial;">
-    <li>I had to go back and change the data layers for the NOAA data because they weren't working. This is because I didn't realize it was "multiple point data" until I tried putting it in Scene Viewer which isn't supported. </li>
-    <img src="images/dashboardempty.png" alt="Empty Dashboard" style="max-width: 100%; height: auto;">
+    <li>Neither NOAA layers worked. For the first one (wind) it was because I didn't realize it was "multiple point data" until I tried putting it in Scene Viewer which isn't supported. I still don't know about the storm layer.</li>
+     <li>My phone crashed a few times, so it's very important to keep the amount of layers and configurations to a minimum for mobile use. </li>
+    <img src="images/dashboardcrash.png" alt="Empty Dashboard" style="max-width: 100%; height: auto;">
     <li>Sometimes Scene Viewer won't work on my computer, so I've found it in consistent.</li>
     <li>The hardest part was finding compatible data. It took a while before I was able to find decent 3D data that was compatible with Scene Viewer. I didn't get to try out the gauge and other configurations because the data I could find didn't work with it.</li>
-    <li>In the end, Dashboard is a great way to interact with a map on your mobile device that requires additional data to understand and use it effectively, but it is just Scene Viewer with add-ons. So for maitenance workers in the field, this may be useful, but Scene Viewer alone works well on a mobile device alone.</li>
+    <li>In the end, Dashboard is a great way to interact with a map on your mobile device that requires additional data to understand and use it effectively, but it is just Scene Viewer with add-ons that may cause your phone to crash if you're not careful with the amount of data there. So for maitenance workers in the field, this may be useful, but Scene Viewer alone works well on a mobile device alone.</li>
     <img src="images/tl.gif" alt="screenshot-2" style="flex: 1; max-width: 50%; height: auto;">
   </ul>
   <!-- Process steps with left margin -->
