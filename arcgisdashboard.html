@@ -113,9 +113,13 @@
     <li>Step 3. Under "New App" in my Content, I selected "Dashboards" and began working with the different configurations available.</li>
     <img src="images/dashboardsettings.png" alt="Portland Dashboard Settings" style="max-width: 100%; height: auto;">
     </li>
-    <li>Step 4. In "Mobile" view, I selected "Drawer" to browse through and add an Esri Living Atlas layer: NOAA USA Storm Reports. The window at the bottom will now popup and allow me to select a type of storm.</li>
+    <li>Step 4. In "Mobile" view, I selected "Body" to browse through and add an Esri Living Atlas layer: NOAA USA Wind Speeds. That didn't work (more about why below), so I went in and changed it to NOAA USA Storm Reports. I then configured it to group the types of storms so you can filter by "Snow" for example, and it will show you where in the past week it has snowed. Users can select that filter by clicking the filter button and the bottom of the screen.</li>
     <img src="images/dashboardstorm.png" alt="Portland Dashboards" style="max-width: 100%; height: auto;">
-    <li> ArcGIS Earth Functionality: Add data,Draw,3D Analysis,Underground,Measure,Tour</li>
+    <li>Step 4. In "Mobile" view, I selected "Drawer" to browse through and add one the matching live update data for NOAA USA Storm Reports. The window at the bottom will now show the most recent storm reports.</li>
+    <img src="images/dashboardstorm.png" alt="Portland Dashboards" style="max-width: 100%; height: auto;">
+    <li>Step 5. I also added an ACS Poverty Status Boundaries layer in order to see differences at the city level. I made a similar filter option to only see the level for whatever counties are selected.</li>
+    <img src="images/ol.gif" alt="screenshot-2" style="flex: 1; max-width: 50%; height: auto;">
+    <li>Step 6. Once I made a "splash screen" that shows up when you first open the Dashboard, I published the Dashboard to ArcGIS Online.</li>
     <img src="images/ol.gif" alt="screenshot-2" style="flex: 1; max-width: 50%; height: auto;">
 
   <h2 class="w3-center  " style="font-size: 36px; font-family: Arial;">What worked:</h2>
@@ -139,19 +143,11 @@
 
     <h2 class="w3-center  " style="font-size: 36px; font-family: Arial;">What didn't work:</h2>
   <ul style="font-size: 20px; font-family: Arial;">
-    <li>The first thing I noticed was that the 3D scene occasionally will not show up on my laptop, but at the same time will work on my phone.</li>
+    <li>I had to go back and change the data layers for the NOAA data because they weren't working. This is because I didn't realize it was "multiple point data" until I tried putting it in Scene Viewer which isn't supported. </li>
     <img src="images/dashboardempty.png" alt="Empty Dashboard" style="max-width: 100%; height: auto;">
-    <li>It was working for almost a month and then all of a sudden shows an error on my laptop. <a href="https://doc.arcgis.com/en/arcgis-online/reference/scene-viewer-requirements.htm#SV_TROUBLESHOOTING">Here is a useful website if this happens to you.</a></li>
-    <li style="display: flex;">
-      <img src="images/Seen_2.jpeg" alt="screenshot-2" style="flex: 1; max-width: 50%; height: auto;">
-      <img src="images/Sen_3.png" alt="screenshot-2" style="flex: 1; max-width: 50%; height: auto;">
-    </li>
-    <li>I lo .</li>
-    <li style="display: flex;">
-      <img src="images/Sen_5.jpeg" alt="screenshot-2" style="flex: 1; max-width: 50%; height: auto;">
-      <img src="images/Scr_4.jpeg" alt="screenshot-2" style="flex: 1; max-width: 50%; height: auto;">
-    </li>
-    <li> ArcGIS Earth Functionality: Add data,Draw,3D Analysis,Underground,Measure,Tour</li>
+    <li>Sometimes Scene Viewer won't work on my computer, so I've found it in consistent.</li>
+    <li>The hardest part was finding compatible data. It took a while before I was able to find decent 3D data that was compatible with Scene Viewer. I didn't get to try out the gauge and other configurations because the data I could find didn't work with it.</li>
+    <li>In the end, Dashboard is a great way to interact with a map on your mobile device that requires additional data to understand and use it effectively, but it is just Scene Viewer with add-ons. So for maitenance workers in the field, this may be useful, but Scene Viewer alone works well on a mobile device alone.</li>
     <img src="images/tl.gif" alt="screenshot-2" style="flex: 1; max-width: 50%; height: auto;">
   </ul>
   <!-- Process steps with left margin -->
@@ -160,12 +156,8 @@
     <ul style="font-size: 20px; font-family: Arial;">
       <li>ArcGIS Experience Builder</li>
       <img src="images/erience_j.png" alt="experiencebuilder" style=" max-width: 100%; height: auto;">
-      <li>ArcGIS 360 VR</li>
-      <img src="images/vr.gif" alt="experiencebuilder" style=" max-width: 100%; height: auto;">
       <li>ArcGIS Instant App</li>
       <img src="imagestantapp_j.png" alt="experiencebuilder" style=" max-width: 100%; height: auto;">
-      <li>ArcGIS SDK </li>
-      <img src="images/ArSDK.png" alt="experiencebuilder" style=" max-width: 100%; height: auto;">
 
     </ul>
   <h2>Outcome</h2>
