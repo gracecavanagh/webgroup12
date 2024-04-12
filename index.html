@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Pocket 3D</title>
   <!-- template from https://www.w3schools.com/w3css/tryw3css_templates_website.htm -->
@@ -10,48 +10,36 @@
 <link rel="stylesheet" href="font-awesome.css">
 </head>
 <body id="myPage">
-
-<!-- Sidebar on click -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
-    <i class="fa fa-remove"></i>
-  </a>
-  <a href="#" class="w3-bar-item w3-button">Link 1</a>
-  <a href="#" class="w3-bar-item w3-button">Link 2</a>
-  <a href="#" class="w3-bar-item w3-button">Link 3</a>
-  <a href="#" class="w3-bar-item w3-button">Link 4</a>
-  <a href="#" class="w3-bar-item w3-button">Link 5</a>
-</nav>
-
-<!-- Navbar -->
-<div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="index.html" class="w3-bar-item w3-button w3-red"><i class="fa fa-home w3-margin-right"></i>Pocket 3D</a>
-  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
-  <a href="Solution.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Solutions</a>
-  <!--a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a-->
-    <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button" title="Notifications">Approaches<i class="fa fa-caret-down"></i></button>     
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+  
+  
+  <!-- Navbar -->
+  <div class="w3-top">
+   <div class="w3-bar w3-theme-d2 w3-left-align">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-red">Pocket 3D</a>
+    <a href="index.html#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+    <a href="index.html#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Solutions</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button" title="Notifications">Process</button>     
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="arcgisdashboard.html" class="w3-bar-item w3-button">Portland Dashboard</a>
+        <a href="SceneViewer.html" class="w3-bar-item w3-button">ArcGIS Scene Viewer</a>
+        <a href="Hongkong_InstantApp.html" class="w3-bar-item w3-button">Hongkong Instant App</a>
+        <a href="arcgisearth.html" class="w3-bar-item w3-button">ArcGIS Earth</a>
+      </div>
+    </div>
+   </div>
+  
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+      <a href="index.html#team" class="w3-bar-item w3-button">Team</a>
+      <a href="index.html#work" class="w3-bar-item w3-button">Solutions</a>
       <a href="arcgisdashboard.html" class="w3-bar-item w3-button">Portland Dashboard</a>
       <a href="SceneViewer.html" class="w3-bar-item w3-button">ArcGIS Scene Viewer</a>
       <a href="Hongkong_InstantApp.html" class="w3-bar-item w3-button">Hongkong Instant App</a>
       <a href="arcgisearth.html" class="w3-bar-item w3-button">ArcGIS Earth</a>
     </div>
   </div>
- </div>
-
-  <!-- Navbar on small screens -->
- <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="#team" class="w3-bar-item w3-button">Team</a>
-    <a href="#work" class="w3-bar-item w3-button">Solutions</a>
-    <a href="arcgisdashboard.html" class="w3-bar-item w3-button">Portland Dashboard</a>
-    <a href="SceneViewer.html" class="w3-bar-item w3-button">ArcGIS Scene Viewer</a>
-    <a href="Hongkong_InstantApp.html" class="w3-bar-item w3-button">Hongkong Instant App</a>
-    <a href="arcgisearth.html" class="w3-bar-item w3-button">ArcGIS Earth</a>
-  </div>
-</div>
 
 <!-- Image Header -->
 <div class="w3-display-container w3-animate-opacity">
@@ -125,7 +113,7 @@
 <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
 <div class="w3-quarter">
 <div class="w3-card w3-white">
-  <img src="images/dashboard.gif" alt="ArcGIS Dashboard" style="width:100%">
+  <img src="images/dashboardmainpage.gif" alt="ArcGIS Dashboard" style="width:100%">
   <div class="w3-container">
   <h3>Solution 1</h3>
   <h4>ArcGIS Dashboards</h4>
@@ -188,119 +176,12 @@
   </div>
   </div>
 </div>
-
 </div>
-
-<!-- Container --
-<div class="w3-container" style="position:relative">
-  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-  style="position:absolute;top:-28px;right:24px">+</a>
-</div-->
-
-<!-- Pricing Row --
-<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
-    <h2>PRICING</h2>
-    <p>Here are our methods:</p><br>
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme">
-          <p class="w3-xlarge">Basic</p>
-        </li>
-        <li class="w3-padding-16"><b>10GB</b> Storage</li>
-        <li class="w3-padding-16"><b>10</b> Emails</li>
-        <li class="w3-padding-16"><b>10</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 10</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-        </li>
-      </ul>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme-l2">
-          <p class="w3-xlarge">Pro</p>
-        </li>
-        <li class="w3-padding-16"><b>25GB</b> Storage</li>
-        <li class="w3-padding-16"><b>25</b> Emails</li>
-        <li class="w3-padding-16"><b>25</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 25</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-        </li>
-      </ul>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme">
-          <p class="w3-xlarge">Premium</p>
-        </li>
-        <li class="w3-padding-16"><b>50GB</b> Storage</li>
-        <li class="w3-padding-16"><b>50</b> Emails</li>
-        <li class="w3-padding-16"><b>50</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 50</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-        </li>
-      </ul>
-    </div>
-</div>
-
-<!-- Contact Container 
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
-      <h3>Address</h3>
-      <p>Swing by for a cup of coffee, or whatever.</p>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
-      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
-    </div>
-    <div class="w3-col m7">
-      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-      <div class="w3-section">      
-        <label>Name</label>
-        <input class="w3-input" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">      
-        <label>Email</label>
-        <input class="w3-input" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">      
-        <label>Message</label>
-        <input class="w3-input" type="text" name="Message" required>
-      </div>  
-      <input class="w3-check" type="checkbox" checked name="Like">
-      <label>I Like it!</label>
-      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-      </form>
-    </div>
-  </div>
-</div-->
-
-
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-  <p>Contact Us </p>
   <p>The Team</p>
   <p>Grace Cavanagh || Nishant Prajapati || Jainiben Pokar || Suruchi Tolia</p>
-  
-  
   
   <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
     <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
