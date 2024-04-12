@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Pocket 3D</title>
   <!-- template from https://www.w3schools.com/w3css/tryw3css_templates_website.htm -->
@@ -7,345 +7,194 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="theme.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="font-awesome.css">
 </head>
 <body id="myPage">
-
-<!-- Navbar -->
-<div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href="index.html" class="w3-bar-item w3-button w3-red"><i class="fa fa-home w3-margin-right"></i>Pocket 3D</a>
-  <a href="index.html#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
-  <a href="index.html#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Solutions</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button" title="Notifications">Approaches <i class="fa fa-caret-down"></i></button>     
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-      <a href="arcgisdashboard.html" class="w3-bar-item w3-button">ArcGIS Dashboard</a>
+  
+  
+  <!-- Navbar -->
+  <div class="w3-top">
+   <div class="w3-bar w3-theme-d2 w3-left-align">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-red">Pocket 3D</a>
+    <a href="index.html#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+    <a href="index.html#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Solutions</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button" title="Notifications">Process</button>     
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+        <a href="arcgisdashboard.html" class="w3-bar-item w3-button">ArcGIS Dashboards</a>
+        <a href="SceneViewer.html" class="w3-bar-item w3-button">ArcGIS Scene Viewer</a>
+        <a href="Hongkong_InstantApp.html" class="w3-bar-item w3-button">ArcGIS Instant App</a>
+        <a href="arcgisearth.html" class="w3-bar-item w3-button">ArcGIS Earth</a>
+      </div>
+    </div>
+   </div>
+  
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+      <a href="index.html#team" class="w3-bar-item w3-button">Team</a>
+      <a href="index.html#work" class="w3-bar-item w3-button">Solutions</a>
+      <a href="arcgisdashboard.html" class="w3-bar-item w3-button">Portland Dashboard</a>
       <a href="SceneViewer.html" class="w3-bar-item w3-button">ArcGIS Scene Viewer</a>
       <a href="Hongkong_InstantApp.html" class="w3-bar-item w3-button">Hongkong Instant App</a>
       <a href="arcgisearth.html" class="w3-bar-item w3-button">ArcGIS Earth</a>
     </div>
   </div>
- </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="index.html#team" class="w3-bar-item w3-button">Team</a>
-    <a href="index.html#work" class="w3-bar-item w3-button">Solutions</a>
-    <a href="#" class="w3-bar-item w3-button">Search</a>
-  </div>
-</div>
-
-<!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity">
-  <img src="unsplash1.jpg" alt="boat" style="width:100%;">
-  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-red" title="Go To W3.CSS">Attention!</button>
-  </div>
-</div>
-
-<!-- Container -->
-<div class="w3-container" style="position:relative">
-  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-  style="position:absolute;top:-28px;right:24px">+</a>
-</div>
-
-<!-- Work Row -->
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
-
-<div class="w3-quarter">
-<h2>Our Work</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="/w3images/snow.jpg" alt="Snow" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 1</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 2</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-  <div class="w3-container">
-  <h3>Customer 3</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
-
-</div>
-
-<!-- Container -->
-<div class="w3-container" style="position:relative">
-  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-  style="position:absolute;top:-28px;right:24px">+</a>
-</div>
-
-<!--div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="images/earth.gif" alt="Mountains" style="width:100%">
-  <div class="w3-container">
-  <h3>Solution 4</h3>
-  <h4>ArcGIS Earth</h4>
-  <h5>Itroduction</h5>
-  <p>ArcGIS Earth is a free application designed for visualizing and exploring geospatial content in 3D on desktop and mobile devices.ArcGIS Earth supports a wide array of data formats and services, including KML, scene layers, map packages, tile packages, and Open Geospatial Consortium (OGC) web services. </p>
-  <p>Features:</p>
-  <li>Working in any environment</li>
-  <li>Multidimensional insight</li>
-  <li>Create, Edit, Share</li>
-  <li>Highly customizable</li>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div-->
   
-<!-- Modal --
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content w3-card-4 w3-animate-top">
-    <header class="w3-container w3-teal w3-display-container"> 
-      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-    </header>
-    <div class="w3-container">
-      <p>The website is created for educational purpose only and These links may be unusable in the future due to licensing expirations.</p>
-      <p>Team - Pocket 3D</p>
+  <!-- Image Header -->
+  <div class="w3-display-container w3-animate-opacity">
+    <img src="images/dashboard.gif" alt="ArcGIS Dashboard" style="width:100%;">
+    <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-red" title="Go To W3.CSS">Attention!</button>
     </div>
-    <footer class="w3-container w3-red">
-    </footer>
   </div>
-</div>
-
-<!-- Work Row --
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="dashboard.gif" alt="ArcGIS Dashboard" style="width:100%">
-  <div class="w3-container">
-  <h3>Solution 1</h3>
-  <h4>ArcGIS Dashboards</h4>
-  <p>Provides additional functionalities for your 3D scene.</p>
-  <p>Con??: Was unable to find data to showcase the Windspeed capabilities.</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="SceneViewer.gif" alt="Sceneviewer" style="width:100%">
-  <div class="w3-container">
-  <h3>Solution 2</h3>
-  <h4>ArcGIS Scene Viewer</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="InstantApp.gif" alt="ArcGIS Instant App" style="width:100%">
-  <div class="w3-container">
-  <h3>Solution 3</h3>
-  <h4>ArcGIS Instant Apps</h4>
-  <p>A web based application which provides 3D visualization on Portable Device</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="earth.gif" alt="Mountains" style="width:100%">
-  <div class="w3-container">
-  <h3>Solution 4</h3>
-  <h4>ArcGIS Earth</h4>
-  <h5>Itroduction</h5>
-  <p>ArcGIS Earth is a free application designed for visualizing and exploring geospatial content in 3D on desktop and mobile devices.ArcGIS Earth supports a wide array of data formats and services, including KML, scene layers, map packages, tile packages, and Open Geospatial Consortium (OGC) web services. </p>
-  <p>Featuers:</p>
-  <li>Working in any environment</li>
-  <li>Multidimesional insight</li>
-  <li>Create,Edit,Share</li>
-  <li>High customizable</li>
-  <p>Blablabla</p>
-  </div>
-  </div>
-</div>
-
-</div>
-
-<!-- Container --
-<div class="w3-container" style="position:relative">
-  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-  style="position:absolute;top:-28px;right:24px">+</a>
-</div-->
-
-<!-- Pricing Row --
-<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
-    <h2>PRICING</h2>
-    <p>Here are our methods:</p><br>
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme">
-          <p class="w3-xlarge">Basic</p>
-        </li>
-        <li class="w3-padding-16"><b>10GB</b> Storage</li>
-        <li class="w3-padding-16"><b>10</b> Emails</li>
-        <li class="w3-padding-16"><b>10</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 10</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-        </li>
-      </ul>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme-l2">
-          <p class="w3-xlarge">Pro</p>
-        </li>
-        <li class="w3-padding-16"><b>25GB</b> Storage</li>
-        <li class="w3-padding-16"><b>25</b> Emails</li>
-        <li class="w3-padding-16"><b>25</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 25</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-        </li>
-      </ul>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-border w3-hover-shadow">
-        <li class="w3-theme">
-          <p class="w3-xlarge">Premium</p>
-        </li>
-        <li class="w3-padding-16"><b>50GB</b> Storage</li>
-        <li class="w3-padding-16"><b>50</b> Emails</li>
-        <li class="w3-padding-16"><b>50</b> Domains</li>
-        <li class="w3-padding-16"><b>Endless</b> Support</li>
-        <li class="w3-padding-16">
-          <h2 class="w3-wide"><i class="fa fa-usd"></i> 50</h2>
-          <span class="w3-opacity">per month</span>
-        </li>
-        <li class="w3-theme-l5 w3-padding-24">
-          <button class="w3-button w3-teal w3-padding-large"><i class="fa fa-check"></i> Sign Up</button>
-        </li>
-      </ul>
-    </div>
-</div>
-
-<!-- Contact Container --
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
-      <h3>Address</h3>
-      <p>Swing by for a cup of coffee, or whatever.</p>
-      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
-      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
-      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
-    </div>
-    <div class="w3-col m7">
-      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-      <div class="w3-section">      
-        <label>Name</label>
-        <input class="w3-input" type="text" name="Name" required>
+  
+  <!-- Modal -->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-teal w3-display-container"> 
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      </header>
+      <div class="w3-container" style="font-family: Arial;">
+        <p>These links may be unusable in the future due to licensing expirations.</p>
+        <p> - Team Pocket 3D</p>
       </div>
-      <div class="w3-section">      
-        <label>Email</label>
-        <input class="w3-input" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">      
-        <label>Message</label>
-        <input class="w3-input" type="text" name="Message" required>
-      </div>  
-      <input class="w3-check" type="checkbox" checked name="Like">
-      <label>I Like it!</label>
-      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-      </form>
+      <footer class="w3-container w3-red">
+      </footer>
     </div>
   </div>
-</div-->
-
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
+  <div class="w3-container w3-padding-32  w3-center">
+  <h1>ArcGIS Dashboard</h1>
+  <p>An ArcGIS Dashboard is a way of presenting location information and relative data on the same screen, so that everything you need to make a decision or monitor conditions are right in front of you at once. Optionally, you can use data from Esri Living Atlas like the NOAA (National Oceanic and Atmospheric Administration) along with items from your content on ArcGIS Online. Configurable elements include maps, gauges, indicators, charts, lists, and tables that you can use to enrich the interactive experience and display your data.</p>
+  <p></p>
+    <!-- Container -->
+  <!--  Table -->
+  <div class="w3-container w3-padding-32 w3-center" style="font-family: Arial;">
+    <table class="w3-table w3-bordered">
+      <thead>
+        <tr>
+          <th class="w3-center" style="background-color: black; color: white;">Advantages</th>
+          <th class="w3-center" style="background-color: black; color: white;">Disadvantages</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="w3-center">Highly customizable</td>
+          <td class="w3-center">Can clutter a small screen if there are many of data windows</td>
+        </tr>
+        <tr>
+          <td class="w3-center">Separate view for mobile devices available to configure</td>
+          <td class="w3-center">Not configured for landscape view</td>
+        </tr>
+        <tr>
+          <td class="w3-center">Compatible with 3D Scenes</td>
+          <td class="w3-center">Data needs to be ArcGIS Online compatible</td>
+        </tr>
+        <tr>
+          <td class="w3-center">Displays location-based data and interactive maps on the same screen</td>
+          <td class="w3-center">Reliant on internet connection</td>
+        </tr>
+        <tr>
+          <td class="w3-center">No coding needed</td>
+          <td class="w3-center">Large amounts of data and layers may cause the webpage to crash on a mobile device.</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-</footer>
-
-<script>
-// Script for side navigation
-function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "300px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
-
-// Close side navigation
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
+  </div>
+  <div class="w3-row-padding w3-padding-64 w3-display-container" id="pricing">
+    <!-- Explanation of the process -->
+    <h2 class="w3-center">Process</h2>
+    <ul>
+      <li>Step 1. I selected data from ArcGIS Online to use in a Scene.</li>
+    </ul>
+      <img src="images/portlanddata.png" alt="Portland Item Page" style="max-width: 100%; height: auto;"><img src="images/copopendata.png" alt="COP REST Page" style="max-width: 100%; height: auto;">
+    <ul>
+      <li>Step 2. I added the layers into ArcGIS Online Scene Viewer, enabled the legend so it would transfer to the options on the Dashboard configuration page, <a href="https://fleming.maps.arcgis.com/home/webscene/viewer.html?webscene=d88d88ca30e5403b8caea20e969503a6">and published it here</a></li>
+    </ul>
+      <img src="images/portlandscene.png" alt="Portland Scene Viewer" style="max-width: 100%; height: auto;">
+    <ul>
+      <li>Step 3. Under "New App" in my Content, I selected "Dashboards" and began working with the different configurations available.</li>
+    </ul>
+      <img src="images/dashboardsettings.png" alt="Portland Dashboard Settings" style="max-width: 100%; height: auto;">
+    <ul>
+      <li>Step 4. In "Mobile" view, I selected "Body" to browse through and add an Esri Living Atlas layer: NOAA USA Wind Speeds. That didn't work (more about why below), so I went in and changed it to NOAA USA Storm Reports which still didn't end up working. Nonetheless, I configured it to group the types of storms so you can filter by "Snow" for example, and if I managed to make it work it would show you where in the past week it has snowed. Users can select that filter by clicking the filter button and the bottom of the screen.</li>
+    </ul>
+      <img src="images/dashboarddrawer22.jpg" alt="Portland Dashboards" style="max-width: 100%;">
+    <ul>
+      <li>Step 4. In "Mobile" view, I selected "Drawer" to browse through and add one the matching live update data for NOAA USA Storm Reports. The window at the bottom will now show the most recent storm reports.</li>
+    </ul>
+      <img src="images/dashboarddrawer33.jpg" alt="Portland Dashboards" style="max-width: 100%;">
+    <ul>
+      <li>Step 5. I also added an ACS Poverty Status Boundaries layer in order to see differences at the city level. I made a similar filter option to only see the level for whatever counties are selected.</li>
+    </ul>
+      <img src="images/dashboarddrawer.jpg" alt="Portland Dashboards" style="max-width: 100%;">
+    <ul>
+      <li>Step 6. Once I made a "splash screen" that shows up when you first open the Dashboard, and made the same filter options in the "desktop" view, I published the Dashboard to ArcGIS Online.</li>
+    </ul>
+      <img src="images/dashboardsplash2.jpg" alt="Portland Dashboards" style="max-width: 100%;">
+    <h2 class="w3-center">What didn't work:</h2>
+    <ul>
+      <li>Neither NOAA layers worked. For the first one (wind) it was because I didn't realize it was "multiple point data" until I tried putting it in Scene Viewer which isn't supported. I still don't know about the storm layer.</li>
+       <li>My phone crashed a few times, so it's very important to keep the amount of layers and configurations to a minimum for mobile use. </li>
+    </ul>
+      <img src="images/dashboarderror2.jpg" alt="Empty Dashboard">
+    <ul>
+      <li>The hardest part was finding compatible data. It took a while before I was able to find decent 3D data that was compatible with Scene Viewer. I didn't get to try out the gauge and other configurations because the data I could find didn't work with it.</li>
+      <li>Overall, Dashboard is a great way to interact with a map on your mobile device that requires additional data to understand and use it effectively, but it is just Scene Viewer with add-ons that may cause your phone to crash if you're not careful with the amount of data there. So for maitenance workers in the field, this may be useful, but Scene Viewer works well on a mobile device alone if you need to manipulate a 3D map.</li>
+    </ul>
+     <h2 class="w3-center">What worked:</h2>
+    <ul>
+      <li>ArcGIS Dashboard is a great mobile option for displaying 3D data, as long as you keep the layers and amount of data to a minimum. It is visually appealing and usually loads fast on both desktop and mobile devices.</li>
+    </ul>
+  </div>
+    <!-- Process steps with left margin -->
+    <div class="w3-container w3-left-margin">
+      <h2>Other Apps I Explored For this Solution</h2>
+      <ul>
+        <li>ArcGIS Scene Viewer</li>
+      </ul>
+        <img src="images/gracesceneviewer.png" alt="Scene Viewer">
+      <ul>
+        <li>ArcGIS Instant App</li>
+      </ul>
+        <img src="images/graceinstantapp.png" alt="Instant App">
+  
+    <h2>Outcome</h2>
+    <h3><a class="w3-text-teal" href="https://fleming.maps.arcgis.com/apps/dashboards/610907ba82cf44098414eaa62380a22c">ArcGIS Dashboard</a></h3>
+    <h3><a class="w3-text-teal" href="https://fleming.maps.arcgis.com/home/webscene/viewer.html?webscene=d88d88ca30e5403b8caea20e969503a6">ArcGIS Scene Viewer</a></h3>
+    <h3><a class="w3-text-teal" href="https://fleming.maps.arcgis.com/apps/instant/3dviewer/index.html">ArcGIS Instant App (data changed somehow, used to be Portland)</a></h3>
+  </div>
+  
+  <script>
+  // Script for side navigation
+  function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
   }
-}
-</script>
+  
+  // Close side navigation
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  
+  // Used to toggle the menu on smaller screens when clicking on the menu button
+  function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+  
+  <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+    <p>The Team</p>
+    <p>Grace Cavanagh || Nishant Prajapati || Jainiben Pokar || Suruchi Tolia</p>
+  </footer>
 
 </body>
 </html>
