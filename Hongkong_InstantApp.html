@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="theme.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="font-awesome.css">
 </head>
 <body id="myPage">
 
@@ -19,7 +19,7 @@
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
   <a href="index.html" class="w3-bar-item w3-button w3-red">Pocket 3D</a>
   <a href="index.html#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
-  <a href="index.html#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Solutions</a>
+  <a href="Solutions.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Solutions</a>
     <div class="w3-dropdown-hover w3-hide-small">
     <button class="w3-button" title="Notifications">Process</button>     
     <div class="w3-dropdown-content w3-card-4 w3-bar-block">
@@ -114,113 +114,81 @@
 <!--The Process-->
   <a class="w3-text-teal" href="https://doc.arcgis.com/en/instant-apps/latest/get-started/about-instant-apps.htm">ArcGIS Instant App</a>
   </p>
-  <h2>Process</h2>
-     <p>Please note: these links may be unusable in the future due to licensing expirations.</p>
-  <h3>Step 1</h3>
-  <p>I logged in to ArcGIS Online and Selected the ArcGIS Instant apps to launch it, and then Selected the 3D View option of the Application. </p>
-        <img src="images/Step1.png" alt="Instant_App" style="max-width: 100%; height: auto;"><img src="images/copopendata.png" alt="COP REST Page" style="max-width: 100%; height: auto;">
-  <h3>Step 2</h3>
-  <p>Then, I added the appropriate title and description and started Configuring the Application acording to our needs and also watched the tutorial on how to configure/Develop an ArcGIS Instant App.</p>
-    <p> Turned off the Express mode to get more feature configurations on the app</p>
-    <h3> <a class="w3-text-teal" href="https://youtu.be/4aIJ54slsTU?si=RC-FqXsLk7AmH7Vc">ArcGIS Instant Apps Demo Video</a></h3>
-        <img src="images/config_opts.png" alt="Instant_App_Configurations" style="max-width: 100%; height: auto;"><img src="images/copopendata.png" alt="COP REST Page" style="max-width: 100%; height: auto;">
-
-   <h3>Step 3</h3>
-    <p> Added the app functionalities like full screen mode, Welcome screen, Time animation, basemaps interchangeability, weather visualization, Layer list.</p>
-
-   <h3>Mobile View of Instant App</h3>
-        <img src="images/Mbl_Vw.jpg" alt="Mobile_View" style="max-width: 100%; height: auto;"><img src="images/copopendata.png" alt="COP REST Page" style="max-width: 100%; height: auto;">
-    <h3>Desktop View of Instant App</h3>
-         <img src="images/Desktop.png" alt="Desktop_View" style="max-width: 100%; height: auto;"><img src="images/copopendata.png" alt="COP REST Page" style="max-width: 100%; height: auto;">
-  <p>Overall Steps:</p>
-  <li>Create a new application</li>
-  <li>Select layers you want to add</li>
-  <li>Configure the View Options</li>
-  <li>Modify the Application via adding features of your choice</li>
-  <li>Add Basemap Gallery</li>
-  <li>Share and set sharing levels</li>
-<!--The Output which we created-->
-<h2>Outcomes</h2>
-<h3> <a class="w3-text-teal" href="https://fleming.maps.arcgis.com/apps/instant/3dviewer/index.html?appid=afe81dc5f50f491db851af8da4510d7e">Pocket 3D ArcGIS Instant Application</a></h3>
-<h2> Things I explored </h2>
-<h3> <a class="w3-text-teal" href="https://fleming.maps.arcgis.com/apps/dashboards/cdeed9d9b1a842258f5ae415cbd2155d">Dashboard</a></h3>   
-<h3> <a class="w3-text-teal" href="https://storymaps.arcgis.com/stories/e3fc3cbcd0e247518c2350d227f0a212">StoryMap</a></h3>
-<h3> <a class="w3-text-teal" href="https://fleming.maps.arcgis.com/home/webscene/viewer.html?webscene=9be3427c85274eaeac4f97de98dc00ff">Scene Viewer</a></h3>
-</div>
-   </div>
-
-
-
-<script>
-// Script for side navigation
-function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "300px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
-
-// Close side navigation
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
-
-</body>
-</html>
-
-
-<!--Footer Section-->
-<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-  <p>Contact Us </p>
-  <p>The Team</p>
-  <p>Grace Cavanagh || Nishant Prajapati || Jainiben Pokar || Suruchi Tolia</p>
-  
-  
-  
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
+  <h2 class="w3-center">Process</h2>
+    <p>Please note: these links may be unusable in the future due to licensing expirations.</p>
+    <ul>
+      <li>Step 1. I logged in to ArcGIS Online and Selected the ArcGIS Instant apps to launch it, and then Selected the 3D View option of the Application. </li>
+    </ul>
+      <img src="images/Step1.png" alt="Instant_App" style="max-width: 100%; height: auto;">
+    <ul>
+      <li>Step 2. Then, I added the appropriate title and description and started Configuring the Application acording to our needs and also watched the tutorial on how to configure/Develop an ArcGIS Instant App.</li>
+      <li>Turned off the Express mode to get more feature configurations on the app</li>
+    </ul>
+      <img src="images/config_opts.png" alt="Instant_App_Configurations" style="max-width: 100%; height: auto;">
+    <ul>
+      <li>Step 3. Added the app functionalities like full screen mode, Welcome screen, Time animation, basemaps interchangeability, weather visualization, Layer list.</li>
+    </ul>
+      <img src="images/dashboardsettings.png" alt="Portland Dashboard Settings" style="max-width: 100%; height: auto;">
+      
+    <ul>
+      <li>Step 4.Published the Application</li>
+      <li>Mobile View of Instant App</li>
+    </ul>
+      <img src="images/Mbl_Vw.jpg" alt="Mobile_View" style="max-width: 100%; height: auto;">
+    <ul>
+      <li>Desktop View of the Instant App</li>
+    </ul>
+      <img src="images/Desktop.png" alt="Desktop_View" style="max-width: 100%; height: auto;">
+    <ul>
+      <li>Overall Steps :</li>
+      <li>Create a new application</li>
+      <li>Select layers you want to add</li>
+      <li>Configure the View Options</li>
+      <li>Modify the Application via adding features of your choice</li>
+      <li>Add Basemap Gallery</li>
+      <li>Share and set sharing levels</li>
+    </ul>
+    
   </div>
-</footer>
-
-
-
-<script>
-// Script for side navigation
-function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "300px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
-
-// Close side navigation
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
+    <!-- Process steps with left margin -->
+    <div class="w3-container w3-left-margin">
+      <h2>Outcomes</h2>
+      <h3> <a class="w3-text-teal" href="https://fleming.maps.arcgis.com/apps/instant/3dviewer/index.html?appid=afe81dc5f50f491db851af8da4510d7e">Pocket 3D ArcGIS Instant Application</a></h3>
+      <h2> Things I explored </h2>
+      <h3> <a class="w3-text-teal" href="https://fleming.maps.arcgis.com/apps/dashboards/cdeed9d9b1a842258f5ae415cbd2155d">Dashboard</a></h3>   
+      <h3> <a class="w3-text-teal" href="https://storymaps.arcgis.com/stories/e3fc3cbcd0e247518c2350d227f0a212">StoryMap</a></h3>
+      <h3> <a class="w3-text-teal" href="https://fleming.maps.arcgis.com/home/webscene/viewer.html?webscene=9be3427c85274eaeac4f97de98dc00ff">Scene Viewer</a></h3>
+  </div>
+  
+  <script>
+  // Script for side navigation
+  function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
   }
-}
-</script>
+  
+  // Close side navigation
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  
+  // Used to toggle the menu on smaller screens when clicking on the menu button
+  function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
+  
+  <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+    <p>The Team</p>
+    <p>Grace Cavanagh || Nishant Prajapati || Jainiben Pokar || Suruchi Tolia</p>
+  </footer>
 
 </body>
 </html>
