@@ -114,59 +114,40 @@
     <img src="images/dashboardsettings.png" alt="Portland Dashboard Settings" style="max-width: 100%; height: auto;">
     </li>
     <li>Step 4. In "Mobile" view, I selected "Body" to browse through and add an Esri Living Atlas layer: NOAA USA Wind Speeds. That didn't work (more about why below), so I went in and changed it to NOAA USA Storm Reports which still didn't end up working, but I then configured it to group the types of storms so you can filter by "Snow" for example, and it will show you where in the past week it has snowed. Users can select that filter by clicking the filter button and the bottom of the screen.</li>
-    <img src="images/dashboarddrawer2.PNG" alt="Portland Dashboards" style="max-width: 100%; height: auto;">
+    <img src="images/dashboarddrawer22.jpg" alt="Portland Dashboards" style="max-width: 100%;">
     <li>Step 4. In "Mobile" view, I selected "Drawer" to browse through and add one the matching live update data for NOAA USA Storm Reports. The window at the bottom will now show the most recent storm reports.</li>
-    <img src="images/dashboarddrawer3.PNG" alt="Portland Dashboards" style="max-width: 100%; height: auto;">
+    <img src="images/dashboarddrawer33.jpg" alt="Portland Dashboards" style="max-width: 100%;">
     <li>Step 5. I also added an ACS Poverty Status Boundaries layer in order to see differences at the city level. I made a similar filter option to only see the level for whatever counties are selected.</li>
-    <img src="images/dashboarddrawer.png" alt="screenshot-2" style="flex: 1; max-width: 50%; height: auto;">
+    <img src="images/dashboarddrawer__.jpg" alt="Portland Dashboards" style="max-width: 100%;">
     <li>Step 6. Once I made a "splash screen" that shows up when you first open the Dashboard, and made the same filter options in the "desktop" view, I published the Dashboard to ArcGIS Online.</li>
-    <img src="images/dashboardsplash.png" alt="screenshot-2" style="flex: 1; max-width: 50%; height: auto;">
+    <img src="images/dashboardsplash2.jpg" alt="Portland Dashboards" style="max-width: 100%;">
 
-  <h2 class="w3-center  " style="font-size: 36px; font-family: Arial;">What worked:</h2>
-  <ul style="font-size: 20px; font-family: Arial;">
-    <li>Dashboard was</li>
-    <img src="images/Scr_1.png" alt="screenshot-1" style="max-width: 100%; height: auto;">
-    <li>I published that scene in the my ArcGIS Online account.</li>
-    <a href="https://fleming.maps.arcgis.com/home/item.html?id=776a6f1719d94ce6a4d0c1779aba13a1">ArcGIS SceneViewer</a>
-    <li>Login i </li>
-    <li style="display: flex;">
-      <img src="images/een_2.jpeg" alt="scshot-2" style="flex: 1; max-width: 50%; height: auto;">
-      <img src="imagereen_3.png" alt="screens-2" style="flex: 1; max-width: 50%; height: auto;">
-    </li>
-    <li>I l .</li>
-    <li style="display: flex;">
-      <img src="images/en_5.jpeg" alt="screenshot-2" style="flex: 1; max-width: 50%; height: auto;">
-      <img src="imageseen_4.jpeg" alt="screenshot-2" style="flex: 1; max-width: 50%; height: auto;">
-    </li>
-    <li> ArcGIS Earth Functionality: Add data,Draw,3D Analysis,Underground,Measure,Tour</li>
-    <img src="images/tl.gif" alt="screenshot-2" style="flex: 1; max-width: 50%; height: auto;">
-
-    <h2 class="w3-center  " style="font-size: 36px; font-family: Arial;">What didn't work:</h2>
+  <h2 class="w3-center  " style="font-size: 36px; font-family: Arial;">What didn't work:</h2>
   <ul style="font-size: 20px; font-family: Arial;">
     <li>Neither NOAA layers worked. For the first one (wind) it was because I didn't realize it was "multiple point data" until I tried putting it in Scene Viewer which isn't supported. I still don't know about the storm layer.</li>
      <li>My phone crashed a few times, so it's very important to keep the amount of layers and configurations to a minimum for mobile use. </li>
-    <img src="images/dashboardcrash.png" alt="Empty Dashboard" style="max-width: 100%; height: auto;">
+    <img src="images/dashboardcrash.png" alt="Empty Dashboard" style="max-width: 100%;">
     <li>Sometimes Scene Viewer won't work on my computer, so I've found it in consistent.</li>
     <li>The hardest part was finding compatible data. It took a while before I was able to find decent 3D data that was compatible with Scene Viewer. I didn't get to try out the gauge and other configurations because the data I could find didn't work with it.</li>
-    <li>In the end, Dashboard is a great way to interact with a map on your mobile device that requires additional data to understand and use it effectively, but it is just Scene Viewer with add-ons that may cause your phone to crash if you're not careful with the amount of data there. So for maitenance workers in the field, this may be useful, but Scene Viewer alone works well on a mobile device alone.</li>
-    <img src="images/tl.gif" alt="screenshot-2" style="flex: 1; max-width: 50%; height: auto;">
+    <li>Overall, Dashboard is a great way to interact with a map on your mobile device that requires additional data to understand and use it effectively, but it is just Scene Viewer with add-ons that may cause your phone to crash if you're not careful with the amount of data there. So for maitenance workers in the field, this may be useful, but Scene Viewer alone works well on a mobile device alone.</li>
   </ul>
+ <h2 class="w3-center  " style="font-size: 36px; font-family: Arial;">What worked:</h2>
+  <ul style="font-size: 20px; font-family: Arial;">
+    <li>ArcGIS Dashboard is a great mobile option for displaying 3D data, as long as you keep the layers and amount of data to a minimum. It is visually appealing and usually loads fast.</li>
+    
   <!-- Process steps with left margin -->
-  <div class="w3-container w3-left-margin" style="max-width: 800px; ">
-    <h2> What I Explored For this Solution</h2>
-    <ul style="font-size: 20px; font-family: Arial;">
-      <li>ArcGIS Experience Builder</li>
-      <img src="images/erience_j.png" alt="experiencebuilder" style=" max-width: 100%; height: auto;">
+  <div class="w3-container w3-left-margin">
+    <h2>Other Apps I Explored For this Solution</h2>
+    <ul>
+      <li>ArcGIS Scene Viewer</li>
+      <img src="images/gracesceneviewer.png" alt="Scene Viewer">
       <li>ArcGIS Instant App</li>
-      <img src="imagestantapp_j.png" alt="experiencebuilder" style=" max-width: 100%; height: auto;">
-
+      <img src="images/graceinstantapp.png" alt="Instant App">
     </ul>
   <h2>Outcome</h2>
   <h3><a class="w3-text-teal" href="https://fleming.maps.arcgis.com/apps/dashboards/610907ba82cf44098414eaa62380a22c">ArcGIS Dashboard</a></h3>
-  <h3><a class="w3-text-teal" href="https://fleming.maps.arcgis.com/apps/dashboards/610907ba82cf44098414eaa62380a22c">ArcGIS Scene Viewer/a></h3>
-  <h3><a class="w3-text-teal" href="https://fleming.maps.arcgis.com/home/item.html?id=0e008747d28545f48c90fd0188c546a1">ArcGIS r</a></h3>
-  <h3><a class="w3-text-teal" href="https://zpokar.github.io/log/3dweb.html">ArcGIS SDK(Github)</a></h3>
-  <h3><a class="w3-text-teal" href="https://fleming.maps.arcgis.com/home/item.html?id=2c5d1dedc73047228c0599d02edb84ca">ArcGIS Instant App</a></h3>
+  <h3><a class="w3-text-teal" href="https://fleming.maps.arcgis.com/home/webscene/viewer.html?webscene=d88d88ca30e5403b8caea20e969503a6">ArcGIS Scene Viewer/a></h3>
+  <h3><a class="w3-text-teal" href="https://fleming.maps.arcgis.com/apps/instant/3dviewer/index.html">ArcGIS Instant App (data changed somehow, used to be Portland)</a></h3>
 </div>
 </div>
 
