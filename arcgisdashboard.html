@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Pocket 3D</title>
   <!-- template from https://www.w3schools.com/w3css/tryw3css_templates_website.htm -->
@@ -119,7 +119,7 @@
     <img src="images/dashboardsettings.png" alt="Portland Dashboard Settings" style="max-width: 100%; height: auto;">
   <ul>
     <li>Step 4. In "Mobile" view, I selected "Body" to browse through and add an Esri Living Atlas layer: NOAA USA Wind Speeds. That didn't work (more about why below), so I went in and changed it to NOAA USA Storm Reports which still didn't end up working, but I then configured it to group the types of storms so you can filter by "Snow" for example, and it will show you where in the past week it has snowed. Users can select that filter by clicking the filter button and the bottom of the screen.</li>
-   <ul>
+  </ul>
     <img src="images/dashboarddrawer22.jpg" alt="Portland Dashboards" style="max-width: 100%;">
   <ul>
     <li>Step 4. In "Mobile" view, I selected "Drawer" to browse through and add one the matching live update data for NOAA USA Storm Reports. The window at the bottom will now show the most recent storm reports.</li>
@@ -133,7 +133,6 @@
     <li>Step 6. Once I made a "splash screen" that shows up when you first open the Dashboard, and made the same filter options in the "desktop" view, I published the Dashboard to ArcGIS Online.</li>
   </ul>
     <img src="images/dashboardsplash2.jpg" alt="Portland Dashboards" style="max-width: 100%;">
-
   <h2 class="w3-center">What didn't work:</h2>
   <ul>
     <li>Neither NOAA layers worked. For the first one (wind) it was because I didn't realize it was "multiple point data" until I tried putting it in Scene Viewer which isn't supported. I still don't know about the storm layer.</li>
