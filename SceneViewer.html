@@ -43,7 +43,7 @@
 
 <!-- Image Header -->
 <div class="w3-display-container w3-animate-opacity">
- <img src="./images/SceneViewer1.gif" alt="" style="width:100%">
+  <img src="./images/SceneViewer1.gif" alt="Buildings" style="width:100%;">
   <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
     <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-red" title="Go To W3.CSS">Attention!</button>
   </div>
@@ -70,9 +70,12 @@
 
 <!-- ARCGIS SCENE VIEWER -->
 <div class="w3-container w3-padding-32  w3-center">
+  
 <h1>ArcGIS Scene Viewer</h1>  
-<p>Choosing Scene Viewer for 3D visualization is great because it has been designed to make creating and exploring 3D scenes easy. With its user-friendly interface and powerful features, you can bring your data to life in stunning 3D detail. Whether you're visualizing terrain, buildings, or other spatial data, Scene Viewer offers specialized tools like terrain analysis and realistic lighting effects to enhance your visualizations. Plus, it seamlessly integrates with ArcGIS, so you can easily leverage your existing GIS data. From interactive exploration to precise measurements, Scene Viewer empowers you to dive deep into your 3D data and gain valuable insights with ease.</p>
-<p>ArcGIS Scene Viewer is an online application that allows users to explore and interact with 3D geographic information in their web browsers. With Scene Viewer, users can visualize terrain, buildings, and other geographic features. It offers tools for navigation, measurement, and analysis, allowing users to gain insights and make decisions based on their 3D data. Scene Viewer is part of the ArcGIS Online platform, which makes it easy to access and share 3D content with others.</p>
+<p>ArcGIS Scene Viewer is an online application that allows users to explore and interact with 3D geographic information in their web browsers. 
+  With Scene Viewer, users can visualize terrain, buildings, and other geographic features. 
+  It offers tools for navigation, measurement, and analysis, allowing users to gain insights and make decisions based on their 3D data. 
+  Scene Viewer is part of the ArcGIS Online platform, which makes it easy to access and share 3D content with others.</p>
 <!-- Container -->
 
 <!-- ArcGIS Scene Viewer table -->
@@ -107,18 +110,33 @@
 
 
 </div>
-<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+<div class="w3-row-padding w3-center w3-padding-64">
 <!--Explaination why the arcgis scene viewer mapbox application is good or Bad-->
 <h2>Process</h2>
-<p>First, I logged in to my ArcGIS account and open Scene Viewer. Then, I started a new scene and picked a basemap that fits the best for my plan. Next, I added open street map 3d building and open street map 3d trees data layers from Esri living atlas to the map.
-After that, I adjusted the view to get the perfect angle and zoom level. Then I added slides to show different seasons, played with measurement tools.</p> <img src="./images/ST_step1.png" alt="" style="width: 30%">  <img src="./images/ST_step2.png" alt="" style="width: 30%">
-<p> I also changed colors and symbols to make the map look nice, and even add pop-ups to show extra information when someone clicks on something.</p><img src="./images/ST_step3.png" alt="" style="width: 20%"> <img src="./images/ST_step4.png" alt="" style="width: 30%">
-<p> Finally, when everything looked good, I saved my work and share it with others. 
+
+<ol class='w3-left-align'>
+  <li>First, I logged in to my ArcGIS account and open Scene Viewer.</li>
+  <li>Then, I started a new scene and picked a basemap that fits the best for my plan.</li>
+  <li>Next, I added open street map 3d building and open street map 3d trees data layers from Esri living atlas to the map.</li>
+   
+  <li>After that, I adjusted the view to get the perfect angle and zoom level.</li>
+  <li>Then I added slides to show different seasons, played with measurement tools.
+    <img src="./images/ST_step1.png" alt="" style="width: 100%">
+    <img src="./images/ST_step2.png" alt="" style="width: 100%">
+  </li>
+  <li>I also changed colors and symbols to make the map look nice, and even add pop-ups to 
+    show extra information when someone clicks on something.
+    <img src="./images/ST_step3.png" alt="" style="width: 100%"> 
+    <img src="./images/ST_step4.png" alt="" style="width: 100%"></li>
+    
+    <li>Finally, when everything looked good, I saved my work and share it with others.</li>
+</ol>
+</div>
 
 
-<h1>What we have explored</h1> 
 <!-- MAPBOX -->
   <div class="w3-container w3-padding-32  w3-center">
+    <h1>Other Explorations</h1> 
     <h1>Mapbox</h1>  <img src="./images/mapbox.png" alt="" style="width: 60%">
     <p>Mapbox is a versatile platform that helps users to create custom maps and location-based applications. With Mapbox, you can access a wide range of tools and services for designing, visualizing, and analyzing spatial data. Whether you're building interactive maps for websites, mobile apps, or data visualization projects. Mapbox provides powerful capabilities to customize map styles, add geospatial data layers, and incorporate advanced features like real-time updates. Additionally, Mapbox offers SDKs and APIs that allow developers to integrate mapping functionality seamlessly into their applications.</p>
 <!-- Container -->   
@@ -149,21 +167,26 @@ After that, I adjusted the view to get the perfect angle and zoom level. Then I 
 </div>
 
 </div>
-<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+<div class="w3-row-padding w3-center w3-padding-64">
 <!--Explaination why the mapbox application is good or Bad-->
 <h2>Process</h2>
-<p>First, I sign in to my Mapbox account and open the Mapbox Studio application. Then, I created a new project and select the 3D map style you want to use as a base. Next, I used the existing building layer in the mapbox studio. one can add their own data layer by uploading their data (MBTiles, KML, GPX, Geojson, Shapefile, CSV files). Then I customized the appearance of the layers by adjusting colors, symbols, and labels. After that, I changed the building polygon to 3D buildings by changing the building layers type from fill to the fill extrusion (an extrusion 3d polygon) under select data tab and under its style tab filled the height formula: height. Once I was happy with my 3D map, I published it. One can share it with others by embedding it on websites or integrating it into mobile apps. </p>
-<h2>What Didn't Work</h2>
-<p>The another limiting issue I felt in the map box was that the 3d buildings can only be visible from one extent. In this building layer the zoom extent by default was set to minimum 15 and maximum 22.</p>
-<p>I tried to see if I can represent the terrain features in the map box. But I found that while I can adjust the terrain elevation by giving the height and styling it by data condition, but still could not show the complex terrain features properly.</p>
+<ol class='w3-left-align'>
+  <li>First, I sign in to my Mapbox account and open the Mapbox Studio application.</li>
+  <li>Then, I created a new project and select the 3D map style you want to use as a base.</li>
+  <li>Next, I used the existing building layer in the mapbox studio. one can add their own data layer by uploading their data (MBTiles, KML, GPX, Geojson, Shapefile, CSV files).</li>
+  <li>Then I customized the appearance of the layers by adjusting colors, symbols, and labels.</li>
+  <li>After that, I changed the building polygon to 3D buildings by changing the building layers type from fill to the fill extrusion (an extrusion 3d polygon) under select data tab and under its style tab filled the height formula: height.</li>
+  <li>Once I was happy with my 3D map, I published it.</li>
+  <li>One can share it with others by embedding it on websites or integrating it into mobile apps.</li>
+</ol>
 
-
-
-
-
-
-
-
+  <h2>What Didn't Work</h2>
+<p>The another limiting issue I felt in the map box was that the 3d buildings can only be visible from one extent. 
+  In this building layer the zoom extent by default was set to minimum 15 and maximum 22.</p>
+<p>I tried to see if I can represent the terrain features in the map box. 
+  But I found that while I can adjust the terrain elevation by giving the height and styling it by data condition, 
+  but still could not show the complex terrain features properly.</p>
+</div>
 
 
 <!-- DASHBOARD -->
@@ -195,29 +218,31 @@ After that, I adjusted the view to get the perfect angle and zoom level. Then I 
  </div>
         
 </div>
- <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+ <div class="w3-row-padding w3-center w3-padding-64">
 <!--Explaination why the Dashboard application is good or Bad-->
 <h2>Process</h2>
-<p>First, I logged in to my ArcGIS Online account and navigate to the Dashboard section. Then, I created a new dashboard project and selected a layout that includes a 3D map component. Next, I added my 3D map layers by connecting to existing web maps. Later I customized the appearances of the map by adjusting symbology, labels, and basemaps to best represent my data. I also configured the map settings where I enabled the features like pop-up, legends, basemap switcher, search, find my location pan/rotate and zoom in/ out. Additionally, I incorporated interactive elements like filters and selectors to allow users to explore the 3D map dynamically. We can also modify the appearance od the header tab by adding logos. Finally, once my dashboard was complete. I published my dashboard and share it with others.</p>
-<a class="w3-text-teal" href="https://doc.arcgis.com/en/instant-apps/latest/get-started/about-instant-apps.htm">ArcGIS Instant App</a>
-</p>
+
+<ol class='w3-left-align'>
+  <li>First, I logged in to my ArcGIS Online account and navigate to the Dashboard section.</li>
+  <li>Then, I created a new dashboard project and selected a layout that includes a 3D map component.</li>
+  <li>Next, I added my 3D map layers by connecting to existing web maps.</li>
+  <li>Later I customized the appearances of the map by adjusting symbology, labels, and basemaps to best represent my data.</li>
+  <li>I also configured the map settings where I enabled the features like pop-up, legends, basemap switcher, search, find my location pan/rotate and zoom in/ out.</li>
+  <li>Additionally, I incorporated interactive elements like filters and selectors to allow users to explore the 3D map dynamically.</li>
+  <li>We can also modify the appearance od the header tab by adding logos.</li>
+  <li>Finally, once my dashboard was complete. I published my dashboard and share it with others.</li>
+</ol>
+
     
-   
-    
-
-
-
-
-
-
-
 
 
 <!-- EXPERIENCE BUILDER -->
   <div class="w3-container w3-padding-32  w3-center">
     <h1>Experience Builder</h1>  <img src="./images/ExperienceBuilder.png" alt="" style="width: 80%">
-    <p>ArcGIS Experience Builder is a user-friendly web application that allows users to create custom web experiences without coding. It seamlessly integrates with ArcGIS Online, enabling users to incorporate spatial data and services into their web applications. With drag-and-drop functionality and a wide range of templates and widgets, Experience Builder helps users to design interactive and engaging web experiences. It is a versatile tool for storytelling, data visualization.
-
+    <p>ArcGIS Experience Builder is a user-friendly web application that allows users to create custom web experiences without coding. 
+      It seamlessly integrates with ArcGIS Online, enabling users to incorporate spatial data and services into their web applications. 
+      With drag-and-drop functionality and a wide range of templates and widgets, Experience Builder helps users to design interactive and engaging web experiences. 
+      It is a versatile tool for storytelling, data visualization.
     </p>
 <!-- Container -->
             
@@ -246,20 +271,32 @@ After that, I adjusted the view to get the perfect angle and zoom level. Then I 
 </div>
 <div class="w3-row-padding w3-center w3-padding-64" id="pricing">
 <!--Explaination why the aexperience builder application is good or Bad-->
-<h2>Process</h2>
-    <p>First, I logged in to my ArcGIS Online account and opened Experience Builder. Then, I started a new project and choose a blank layout. Next, I added my 3D spatial data to the map widget by connecting through URL. You can customize the appearance of the map by adjusting symbology, labels, and basemaps to suit your needs. Experience Builder offers various tools for adding additional elements like text, images, and buttons to enhance your 3D map. I personally used menu widgets and buttons to create my Experience Builder. Once I finished designing and previewing. I published my project and shared it with others..</p>
-  <a class="w3-text-teal" href="https://doc.arcgis.com/en/instant-apps/latest/get-started/about-instant-apps.htm">ArcGIS Instant App</a>
-  </p>
+<h2 >Process</h2>
+<ol class='w3-left-align'>
+  <li>First, I logged in to my ArcGIS Online account and opened Experience Builder.</li>
+  <li>Then, I started a new project and choose a blank layout.</li>
+  <li>Next, I added my 3D spatial data to the map widget by connecting through URL.</li>
+  <li>You can customize the appearance of the map by adjusting symbology, labels, and basemaps to suit your needs.</li>
+  <li>Experience Builder offers various tools for adding additional elements like text, images, and buttons to enhance your 3D map.</li>
+  <li>I personally used menu widgets and buttons to create my Experience Builder.</li>
+  <li>Once I finished designing and previewing.</li>
+  <li>I published my project and shared it with others.</li>
+</ol>
+
   
 
 
 </div>
    </div>
-<!-- Container Don't know whats this?? -->
-<!--<div class="w3-container" style="position:relative">
-  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-  style="position:absolute;top:-28px;right:24px">+</a>
-</div>-->
+    <!-- Process steps with left margin -->
+    <div class="w3-container w3-left-margin w3-left-align">
+      <h2>Outcome</h2>
+      <h3><a class="w3-text-teal" href="https://fleming.maps.arcgis.com/apps/dashboards/7c1020778e4644e899658137932a27c8">ArcGIS Dashboard</a></h3>
+      <h3><a class="w3-text-teal" href="https://experience.arcgis.com/experience/230ea27b1ac9435dab6e9d6ec9da9013">ArcGIS Experience Builder</a></h3>
+      <h3><a class="w3-text-teal" href="https://fleming.maps.arcgis.com/home/webscene/viewer.html?webscene=5a45e0bc558746f6accd77146b641042">ArcGIS Scene Viewer</a></h3>
+      <h3><a class="w3-text-teal" href="https://fleming.maps.arcgis.com/apps/instant/basic/index.html?appid=7f4dbc810c044dfe9ac925ba8589def2">ArcGIS Instant App</a></h3>
+  
+  </div>
 
 
 
@@ -288,45 +325,13 @@ function openNav() {
 }
 </script>
 
-</body>
-</html>
-
-
-
-<!-- Modal
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content w3-card-4 w3-animate-top">
-    <header class="w3-container w3-teal w3-display-container"> 
-      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-      <h4>This Website has been created for educational purposes.</h4>
-      <h5>Please keep this in mind while scrolling. <i class="fa fa-smile-o"></i></h5>
-    </header>
-    <div class="w3-container">
-      <p>The information presented here may not be appropriate for all applications.</p>
-      <p>Go to <a class="w3-text-teal" href="https://flemingcollege.ca/">Fleming College </a> to learn more.</p>
-    </div>
-    <footer class="w3-container w3-teal">
-      <p>Keep exploring!</p>
-    </footer>
-  </div>
-</div>
-
-</div> 
-
-<!-- Container
-<div class="w3-container" style="position:relative">
-  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
-  style="position:absolute;top:-28px;right:24px">+</a>
-</div> -->
 
 <!--Footer Section-->
 <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
   <p>Contact Us </p>
   <p>The Team</p>
   <p>Grace Cavanagh || Nishant Prajapati || Jainiben Pokar || Suruchi Tolia</p>
-  
-  
-  
+
   <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
     <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
     <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
@@ -334,32 +339,6 @@ function openNav() {
   </div>
 </footer>
 
-
-
-<script>
-// Script for side navigation
-function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "300px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
-
-// Close side navigation
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
 
 </body>
 </html>
